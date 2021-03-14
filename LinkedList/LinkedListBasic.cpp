@@ -6,7 +6,7 @@ typedef void (*func)(int);
 struct list
 {
 	int val = 5;
-	list* next = nullptr;
+	list* next = NULL;
 };
 
 
