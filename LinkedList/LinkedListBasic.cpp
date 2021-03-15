@@ -15,19 +15,29 @@ void push_back(list* begin, list* node)
 	begin->next = node;
 }
 
-void iterate(list* root, func function)
+void iterate_recursive(list* root, func function)
 {
 	if (root != NULL)
 	{
 		function(root->val);
 
-		iterate(root->next, function);
+		iterate_recursive(root->next, function);
 	}
+}
+
+void iterate(list* root, func function)
+{
+    while (root != NULL)
+    {
+        function(root->val);
+
+        root = root->next;
+    }
 }
 
 void print(int val)
 {
-	printf("%d; ", val);
+	printf("%d \n", val);
 }
 
 int main()

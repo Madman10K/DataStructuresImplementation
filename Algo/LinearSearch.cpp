@@ -19,7 +19,7 @@ short linear_search(int* arr, int val, size_t arr_size)
 
 int main()
 {
-	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 	short found = linear_search(arr, 7, sizeof(arr) / 4);
 
